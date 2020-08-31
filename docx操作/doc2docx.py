@@ -12,7 +12,7 @@ def doc_to_docx(path):
         doc.SaveAs(os.path.splitext(path)[0]+".docx", 16)  # 转化后路径下的文件
         doc.Close()
         word.Quit()
-        print("转换完成")
+        print(os.path.splitext(path)[0]+".docx：转换完成")
 
 def find_file(path, ext, file_list=[]):
     dir = os.listdir(path)
@@ -26,11 +26,13 @@ def find_file(path, ext, file_list=[]):
     return file_list
 
 def main():
-    dir_path = "D:\\GitHub program\\py_test\\未完成\\doc"#批量转换文件夹
+    #批量转换文件夹
+    dir_path = "D:\\GitHub program\\py_test\\未完成\\doc"
     ext = ".doc"
     file_list = find_file(dir_path, ext)
     for file in file_list:
         doc_to_docx(file) 
+    print("任务全部完成！")
  
 if __name__ == "__main__":
     main()
