@@ -1,4 +1,14 @@
 {
     "python.pythonPath": "D:\\Python\\Python38\\python.exe",
-    "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe"
+    "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
+    "python.formatting.provider": "yapf",
+    // 默认对Python文件进行静态检查
+    "python.linting.enabled": true,
+
+    // 默认在Python文件保存时进行静态检查
+    "python.linting.lintOnSave": true,
+
+    // 默认使用pylint对Python文件进行静态检查
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintUseMinimalCheckers": false,
 }
