@@ -1,15 +1,22 @@
-# 这是一个注释
-print("hello world")
-a = 1
-b = 2
+import alex_13_函数
 
-# 这是第二个注释
-print("hello python")
+alex_13_函数.print_line("-", 50)
+name_list = []
+str = "hello world"
 
-print("hello my friend")  # 你好我的朋友
-'''
+print(len(str))
+print(str[0:11])
 
-这里说多行注释
-测试一下
-'''
-print(a * b)
+# def m_table():
+#     """九九乘法表"""
+#     sec_num = 1
+#     while sec_num <= 9:
+#         first_num = 1
+#         wh ile first_num <= sec_num:
+#             print("%d * %d = %d" % (first_num, sec_num, first_num * sec_num), end="\t")
+#             first_num += 1
+#         print("")
+#         sec_num += 1
+#
+#
+# m_table()
